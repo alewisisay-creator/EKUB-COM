@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="am">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080d0b">
+<title>EKUB.COM</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--bg:#080d0b;--panel:#101a16;--green:#075c42;--green2:#087b57;--gold:#f5bd28;--muted:#a9b7ae;--line:#28483a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 20%,#123d2b 0,#080d0b 55%);color:#f7f7f2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;padding-bottom:90px}
+header{position:sticky;top:0;z-index:5;background:#090e0cf2;border-bottom:1px solid #243c30;padding:15px 18px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:22px;font-weight:900;letter-spacing:.5px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#ffd95a,#b98200);display:grid;place-items:center;color:#111;font-size:23px;box-shadow:0 0 22px #e9b52c55}
+.lang{background:#14251d;color:#fff;border:1px solid var(--line);padding:9px 11px;border-radius:12px}
+main{max-width:650px;margin:auto;padding:18px}
+.eyebrow{color:var(--gold);font-weight:700;font-size:13px;letter-spacing:1px;margin:8px 0}
+h1{font-size:28px;line-height:1.25;margin:7px 0 18px}
+.hero{border:1px solid #a77b1d;border-radius:22px;overflow:hidden;background:linear-gradient(150deg,#08704e,#062a20 75%);box-shadow:0 12px 35px #0008}
+.prize-art{height:210px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#b9c3bf,#394b44 52%,#14251e 78%);font-size:82px;text-shadow:0 8px 15px #0008}
+.hero-content{padding:19px}.tag{display:inline-block;background:#f5bd2822;color:#ffd45a;border:1px solid #dcae39;border-radius:30px;padding:7px 12px;font-size:12px;font-weight:700}
+h2{font-size:23px;margin:14px 0 5px}.sub{color:#9ef0bd;margin:0 0 17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
+.stat{background:#07130f;border:1px solid #315442;border-radius:13px;padding:10px 3px;text-align:center}.stat b{display:block;color:var(--gold);font-size:22px}.stat small{font-size:11px;color:#b8c8bd}
+.progress-head{display:flex;justify-content:space-between;font-size:13px;margin:16px 0 8px}.progress{height:9px;border-radius:20px;background:#243d32;overflow:hidden}.progress span{display:block;width:35%;height:100%;background:linear-gradient(90deg,#0c9b69,#51d69b);border-radius:20px}
+.btn{width:100%;border:0;border-radius:14px;padding:15px;background:linear-gradient(110deg,#ffd43d,#eaa40b);color:#171006;font-size:17px;font-weight:900;margin-top:17px}
+.section{margin-top:24px;background:#0e1713;border:1px solid var(--line);border-radius:18px;padding:17px}.section h3{margin:0 0 12px;font-size:19px}
+.muted{color:var(--muted);font-size:14px;line-height:1.6}
+.ticket-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.ticket{padding:12px 0;border:1px solid #385846;border-radius:10px;background:#14231b;color:white;font-weight:700}
+.ticket.selected{background:#f5bd28;color:#161006;border-color:#f5bd28}
+.notice{font-size:12px;color:#f3d88a;margin-top:12px;line-height:1.5}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:8;display:grid;grid-template-columns:repeat(3,1fr);background:#101311f5;border-top:1px solid #6d5720;padding:10px 12px calc(10px + env(safe-area-inset-bottom));backdrop-filter:blur(12px)}
+nav button{background:none;border:0;color:#b9c4bd;font-size:12px;padding:5px}nav button.active{color:var(--gold);font-weight:800}nav span{display:block;font-size:22px;margin-bottom:3px}
+.page{display:none}.page.active{display:block}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">🏆</div><span>EKUB.COM</span></div><button class="lang" type="button">🌐 አማርኛ</button></header>
+<main>
+<section id="home" class="page active">
+<div class="eyebrow">🇪🇹 ወደ EKUB.COM እንኳን በደህና መጡ</div>
+<h1>የሚያስደስቱ ሽልማቶችን ይመልከቱ</h1>
+<div class="hero">
+<div class="prize-art" aria-label="ስልክ ምስል">📱</div>
+<div class="hero-content"><span class="tag">✦ የመጀመሪያ ውድድር</span>
+<h2>iPhone 17 Pro Max</h2><p class="sub">የ EKUB.COM የመጀመሪያ ሽልማት</p>
+<div class="stats"><div class="stat"><b>00</b><small>ቀን</small></div><div class="stat"><b>00</b><small>ሰዓት</small></div><div class="stat"><b>00</b><small>ደቂቃ</small></div><div class="stat"><b>00</b><small>ሰከንድ</small></div></div>
+<div class="progress-head"><span>የቲኬት ሁኔታ</span><strong>ሙከራ</strong></div><div class="progress"><span></span></div>
+<button class="btn" onclick="showPage('tickets')">ቲኬቶችን ይመልከቱ</button>
+<p class="notice">ይህ የመጀመሪያ የሙከራ ማሳያ ነው። እውነተኛ ቲኬት ሽያጭ፣ ክፍያ ወይም ዕጣ አያከናውንም።</p>
+</div></div>
+<div class="section"><h3>ስለ EKUB.COM</h3><p class="muted">ሽልማቶችን፣ የውድድር መረጃዎችን እና የግል ቲኬቶችዎን በአንድ ቦታ ለማየት የተዘጋጀ መድረክ።</p></div>
+</section>
+<section id="tickets" class="page"><div class="eyebrow">EKUB.COM</div><h1>የቲኬት ምርጫ</h1><div class="section"><h3>የሙከራ ቲኬቶች</h3><p class="muted">ቁጥር ይምረጡ፤ ምርጫዎ በዚህ ማሳያ ብቻ ይታያል።</p><div class="ticket-grid" id="grid"></div><p class="muted" id="selected">የተመረጡ ቲኬቶች: 0</p><p class="notice">የክፍያ እና የቲኬት ማረጋገጫ አገልግሎቶች ገና አልተገናኙም።</p></div></section>
+<section id="profile" class="page"><div class="eyebrow">EKUB.COM</div><h1>መገለጫ</h1><div class="section"><h3 id="user">እንኳን ደህና መጡ</h3><p class="muted">የእኔ ቲኬቶች፣ የክፍያ ታሪክ እና የመለያ መረጃ ከbackend ጋር ከተገናኘ በኋላ ይታያሉ።</p></div></section>
+</main>
+<nav><button class="active" onclick="showPage('home',this)"><span>⌂</span>ዋና ገጽ</button><button onclick="showPage('tickets',this)"><span>▤</span>ቲኬቶች</button><button onclick="showPage('profile',this)"><span>♙</span>መገለጫ</button></nav>
+<script>
+const tg=window.Telegram?.WebApp;if(tg){tg.ready();tg.expand();if(tg.initDataUnsafe?.user?.first_name)document.getElementById('user').textContent='ሰላም፣ '+tg.initDataUnsafe.user.first_name;}
+function showPage(id,el){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));(el||[...document.querySelectorAll('nav button')][['home','tickets','profile'].indexOf(id)]).classList.add('active');}
+let chosen=new Set();const grid=document.getElementById('grid');for(let i=1;i<=20;i++){let b=document.createElement('button');b.className='ticket';b.textContent=String(i).padStart(2,'0');b.onclick=()=>{chosen.has(i)?chosen.delete(i):chosen.add(i);b.classList.toggle('selected',chosen.has(i));document.getElementById('selected').textContent='የተመረጡ ቲኬቶች: '+chosen.size;};grid.appendChild(b);}
+</script>
+</body></html>
